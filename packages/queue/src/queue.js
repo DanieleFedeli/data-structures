@@ -1,20 +1,18 @@
 export class Queue {
-	#values = [];
-
 	constructor() {
-		this.#values = [];
+		this.values = [];
 	}
 
 	push(value) {
-		return this.#values.push(value);
+		return this.values.push(value);
 	}
 
 	shift() {
-		return this.#values.shift();
+		return this.values.shift();
 	}
 
 	get size() {
-		return this.#values.length;
+		return this.values.length;
 	}
 
 	*[Symbol.iterator]() {
